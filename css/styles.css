@@ -18,6 +18,7 @@ img{
    width: 100%;
    }
 .column-header{
+   display: inline-block;
    width: 100%;
    margin: 0px;
    }
@@ -33,8 +34,8 @@ img{
          display: inline-block;
       }
       .header .logo{
-   width: 100px;
-}
+         width: 100px;
+      }
       .header .label{
         width: 500px;
         }
@@ -62,7 +63,7 @@ img{
       display: inline-block;
       vertical-align: top;
       font-size: medium;
-      width: 70%;
+      width: 100%;
       padding-top: 50px;
 }
          .about-paragraph{
@@ -74,10 +75,12 @@ img{
             padding: 0;
              }
          .legacy-paragraph{
+            display: inline-block;
             width:100%;
             font-size: medium;
             }
          .legacy-future-container{
+            display: inline-block;
             width: 100%;
             }
          .future-paragraph{
@@ -88,7 +91,7 @@ img{
             display: inline-block;
             vertical-align: top;
             padding-left: 0;
-            width: 29%;
+            width: 100%;
             }
          .legacy-container h1{
             padding: 0;
@@ -105,7 +108,7 @@ img{
 
 .column-container-right {
    display: inline-block;
-   width: 29%;
+   width: 100%;
    padding: 20px;
    padding-top: 15px;
 }
@@ -169,12 +172,6 @@ img{
             padding-top: 20px;
             border-bottom: 3px dotted lightgrey;
             }
-         .view-all{
-            text-align: right;
-            }
-         .view-all a{
-            text-decoration: none;
-            }
          .column-image h2{
             margin: 0px;
             padding: 0;
@@ -191,6 +188,12 @@ img{
          .column-image span{
             color: #7E7BB9;
             }
+         .view-all{
+               text-align: right;
+               }
+         .view-all a{
+               text-decoration: none;
+               }
 .glassell-container{
    display: inline-block;
    width: 100%;
@@ -214,6 +217,7 @@ img{
 .footer{
    display: inline-block;
    width: 100%;
+   margin: 0;
 }
          .footer span{
             color: #F00;
@@ -232,7 +236,7 @@ img{
             }
          .profile{
             display: inline-block;
-            width: 17%;
+            width: 20%;
             }
 .ticket-box{
    position: fixed;
@@ -267,23 +271,77 @@ img{
             margin-left: 10px;
             padding: 1px;
             }
-@media screen and (min-width: 678px;){
+@media screen and (min-width: 500px){
    .column-header{
+      width: 33.333%%;
+   }
+   .column-container-left{
+      width: 70%;
+   }
+   .legacy-future{
+      width: 29%;
+   }
+   .column-container-right{
+      width: 29%;
+   }
+   .footer{
       width: 100%;
    }
-   .legacy-future img{
-      width: 30%;
-   }
-   .glassell-image img{
-      width: 30%;
-   }
-   .column-events{
-      width: 30%;
+   .ticket-box{
+      position: fixed;
+      width: 100%;
+      bottom: 1px;
+      margin: 0;
+      padding: 5px;
    }
 }
-/*@media screen and (min-width: 1000px){
-   #div{width: 900px;}
+@media screen and (min-width: 1000px){
+   .column-header{
+      width: 33.333%%;
+   }
+   .column-container-left{
+      width: 70%;
+   }
+   .legacy-future{
+      width: 29%;
+   }
+   .column-container-right{
+      width: 29%;
+   }
+   .footer{
+      width: 100%;
+   }
+   .ticket-box{
+      position: fixed;
+      width: 100%;
+      bottom: 1px;
+      margin: 0;
+      padding: 5px;
+   }
 }
+
+
 @media screen and (min-width: 1400px){
-   #div{width: 1300px;}
-}*/
+   .column-header{
+      width: 33.333%%;
+   }
+   .column-container-left{
+      width: 70%;
+   }
+   .legacy-future{
+      width: 29%;
+   }
+   .column-container-right{
+      width: 29%;
+   }
+   .footer{
+      width: 100%;
+   }
+   .ticket-box{
+      position: fixed;
+      width: 100%;
+      bottom: 1px;
+      margin: 0;
+      padding: 5px
+   }
+}
