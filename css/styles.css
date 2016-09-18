@@ -297,8 +297,16 @@ img{
       justify-content: center;
    }
 
-
+   .ticket-box{
+      position: fixed;
+      width: 100%;
+      bottom: 1px;
+      margin: 0 5 0 0 :
+      padding: 5px;
+   }
 }
+
+
 @media screen and (max-width: 480px){
    .mobile-colapse{
       width: 100%;
@@ -313,8 +321,8 @@ img{
       height: auto;
       margin-right: 0;
    }
-   .image1{
-      justify-content: center;
+   .mfah{
+      width: auto;
    }
    #label{
       display: none;
@@ -322,26 +330,21 @@ img{
    .footer{
       margin: 0;
       width: 100%;
-      height: 200px;
-      border: 1px solid #FFF;
       }
       .footer li{
+      text-decoration: none;
+      display: inline;
       margin: 0;
-      width: 50%;
-      float: left;
+      font-size: small;
    }
    .info{
       padding-bottom: 20px;
    }
+   .ticket-box{
+      position: inherit;
+      width: auto;
 
 
 
-
-   /*.ticket-box{
-      position: fixed;
-      width: 100%;
-      bottom: 1px;
-      margin: 0;
-      padding: 5px;
-   }*/
+   }
 }
