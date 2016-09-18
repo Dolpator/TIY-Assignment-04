@@ -4,8 +4,16 @@
 body{
   padding: 40px;
   background-color: #dedede;
+  overflow-x: hidden;
   font-family: helvetica, sans-serif;
 }
+header{
+	width:100%;
+	background:#1d1f20;
+	height:60px;
+	line-height:60px;
+}
+
 
 img{
   display: block;
@@ -250,16 +258,16 @@ img{
             }
 .ticket-box{
    position: fixed;
-   bottom: 60px;
+   bottom: 100px;
    right: 10px;
    background: #3A539B;
-   width: 30%;
+   width: 25%;
    color: white;
 }
          .ticket-box input{
             width: 85%;
-            padding-left: 5px;
-            padding-right: 5px;
+            padding-left: 2px;
+            padding-right: 2px;
             border-top-left-radius: 5px;
             border-bottom-left-radius: 5px;
             border-bottom-right-radius: 5px;
@@ -298,9 +306,9 @@ img{
    }
 
    .ticket-box{
-      position: fixed;
-      width: 100%;
-      bottom: 1px;
+      position: inherit;
+      width: auto;
+      bottom: 150px;
       margin: 0 5 0 0 :
       padding: 5px;
    }
@@ -313,14 +321,6 @@ img{
       margin-right 15px;
 
    }
-   column-container-right{
-      margin-left: 10px;
-   }
-   img{
-      width: 100%;
-      height: auto;
-      margin-right: 0;
-   }
    .mfah{
       width: auto;
    }
@@ -331,7 +331,7 @@ img{
       margin: 0;
       width: 100%;
       }
-      .footer li{
+   .footer li{
       text-decoration: none;
       display: inline;
       margin: 0;
@@ -343,8 +343,5 @@ img{
    .ticket-box{
       position: inherit;
       width: auto;
-
-
-
    }
 }
